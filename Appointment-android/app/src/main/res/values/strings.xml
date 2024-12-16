@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">医院门诊预约挂号</string>
+    <string name="app_t1">选择科室</string>
+    <string-array name="data1">
+        <item>内科</item>
+        <item>外科</item>
+        <item>妇产科</item>
+        <item>儿科</item>
+        <item>口腔科</item>
+        <item>耳鼻喉科</item>
+        <item>康复科</item>
+        <item>检验科</item>
+        <item>急诊科</item>
+        <item>体检科</item>
+        <item>医务科</item>
+        <item>护理部</item>
+    </string-array>
+
+    <string name="app_t">选择医师职称</string>
+    <string-array name="data">
+        <item>住院医师‌</item>
+        <item>主治医师</item>
+        <item>副主任医师‌</item>
+        <item>主任医师</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

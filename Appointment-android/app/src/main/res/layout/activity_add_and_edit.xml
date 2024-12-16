@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="科室:" />
+
+            <Spinner
+                android:id="@+id/spin_one1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/data1"
+                android:prompt="@string/app_t1"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医师姓名:" />
+
+            <EditText
+                android:id="@+id/et_xingming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/llshap2"
+                android:gravity="top|left"
+                android:hint="医师姓名"
+                android:padding="10dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医师职称:" />
+
+            <Spinner
+                android:id="@+id/spin_one"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:entries="@array/data"
+                android:prompt="@string/app_t"
+                android:spinnerMode="dialog" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="#ff0000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介/擅长:" />
+
+            <EditText
+                android:id="@+id/et_qita"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/llshap2"
+                android:gravity="top|left"
+                android:hint="如个人基本信息，擅长治疗xxx疾病等"
+                android:padding="10dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="医师视频介绍(仅支持.mp4后缀)" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_shanchu"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:scaleType="fitXY"
+                android:src="@drawable/shanchu"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_shipin"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@mipmap/shipin" />
+
+            <!--                如设计界面不显示布局 可注释以下代码 观看完后记得注释改回来 开始-->
+            <LinearLayout
+                android:id="@+id/llvideo"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_video_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <com.my.myapplication.video.MyVideoView
+                        android:id="@+id/id_videoview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/null_color" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/null_color">
+
+                        <com.my.myapplication.video.VideoController
+                            android:id="@+id/id_video_controller"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/null_color" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:layout_alignParentBottom="true"
+                        android:background="#000000" />
+
+                </RelativeLayout>
+            </LinearLayout>
+            <!--                如设计界面不显示布局 可注释以上代码 观看完后记得注释改回来 结束-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#ff0000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医师图片介绍(首张为证件照封面使用)" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_addimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bt_selector"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:text="添加图片"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/tv_addshijian"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="添加预约时间段和价格"
+            android:background="@drawable/bt_selector"
+            android:padding="10dp"
+
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周几开放预约"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="星期一" />
+
+            <CheckBox
+                android:id="@+id/cb_2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="星期二" />
+
+            <CheckBox
+                android:id="@+id/cb_3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="星期三" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cb_4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="星期四" />
+
+            <CheckBox
+                android:id="@+id/cb_5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="星期五" />
+
+            <CheckBox
+                android:id="@+id/cb_6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:text="星期六" />
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/cb_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="星期日" />
+
+
+        <Button
+            android:id="@+id/bt_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bt_selector"
+            android:gravity="center"
+            android:paddingLeft="60dp"
+            android:paddingTop="15dp"
+            android:paddingRight="60dp"
+            android:paddingBottom="15dp"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.my.springboot.mapper.AppointmentMapper">
+
+    <resultMap id="BaseResultMap" type="com.my.springboot.empty.Appointment">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="leixing" column="leixing" jdbcType="VARCHAR"/>
+        <result property="content" column="content" jdbcType="VARCHAR"/>
+        <result property="shijian" column="shijian" jdbcType="BIGINT"/>
+        <result property="xingqi" column="xingqi" jdbcType="VARCHAR"/>
+
+        <result property="qita" column="qita" jdbcType="VARCHAR"/>
+        <result property="shipin" column="shipin" jdbcType="VARCHAR"/>
+        <result property="xingming" column="xingming" jdbcType="VARCHAR"/>
+        <result property="leixingf" column="leixingf" jdbcType="VARCHAR"/>
+
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,leixing,content,shijian,
+        xingqi,
+        qita,shipin,leixingf,xingming
+    </sql>
+</mapper>

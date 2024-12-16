@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.my.springboot.mapper.ShijianMapper">
+
+    <resultMap id="BaseResultMap" type="com.my.springboot.empty.Shijian">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="tid" column="tid" jdbcType="BIGINT"/>
+        <result property="bianhao" column="bianhao" jdbcType="INTEGER"/>
+        <result property="renshu" column="renshu" jdbcType="INTEGER"/>
+        <result property="jiage" column="jiage" jdbcType="VARCHAR"/>
+        <result property="yuyueshijian" column="yuyueshijian" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,tid,bianhao,
+        jiage,yuyueshijian,renshu
+    </sql>
+</mapper>

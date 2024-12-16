@@ -1,0 +1,6 @@
+图片浏览器直接访问url地址 http://localhost(或127.0.0.1或者局域网ip(手机访问需要关电脑防火墙,每个电脑的局域网ip都不一样，需自己查看，查看方法自行百度，局域网ip会随路由器从新启动而发生改变，需经常查看自己电脑的局域网ip是否变动)):yml配置中的端口号/+yml配置中的static-path-pattern/+test.bmp
+
+参考格式： http://localhost:8888/static/test.bmp
+         http://127.0.0.1:8888/static/test.bmp
+          http://192.128.1.100:8888/static/test.bmp
+html文件访问同上 如 http://localhost:8888/static/test.html

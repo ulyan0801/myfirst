@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.my.springboot.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.my.springboot.empty.User">
+        <id property="id" column="id" jdbcType="BIGINT"/>
+        <result property="username" column="username" jdbcType="VARCHAR"/>
+        <result property="password" column="password" jdbcType="VARCHAR"/>
+        <result property="sex" column="sex" jdbcType="TINYINT"/>
+        <result property="birthday" column="birthday" jdbcType="VARCHAR"/>
+        <result property="lastLoginTime" column="last_login_time" jdbcType="VARCHAR"/>
+        <result property="score" column="score" jdbcType="INTEGER"/>
+        <result property="coin" column="coin" jdbcType="INTEGER"/>
+        <result property="balance" column="balance" jdbcType="DECIMAL"/>
+        <result property="createTime" column="create_time" jdbcType="VARCHAR"/>
+        <result property="userStatus" column="user_status" jdbcType="TINYINT"/>
+        <result property="userNickname" column="user_nickname" jdbcType="VARCHAR"/>
+        <result property="avatar" column="avatar" jdbcType="VARCHAR"/>
+        <result property="addr" column="addr" jdbcType="VARCHAR"/>
+        <result property="lastLoginIp" column="last_login_ip" jdbcType="VARCHAR"/>
+        <result property="more" column="more" jdbcType="VARCHAR"/>
+        <result property="guanli" column="guanli" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id
+        ,username,password,
+        sex,birthday,last_login_time,
+        score,coin,balance,
+        create_time,user_status,user_nickname,
+        avatar,addr,last_login_ip,guanli,
+        more
+    </sql>
+</mapper>

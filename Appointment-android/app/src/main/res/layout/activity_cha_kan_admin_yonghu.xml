@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="医师简介" />
+
+
+        <TextView
+            android:id="@+id/tv_qita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="医师简介/擅长" />
+
+        <!--                如设计界面不显示布局 可注释以下代码 观看完后记得注释改回来 开始-->
+        <LinearLayout
+            android:id="@+id/llvideo"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/rl_video_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <com.my.myapplication.video.MyVideoView
+                    android:id="@+id/id_videoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/null_color" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/null_color">
+
+                    <com.my.myapplication.video.VideoController
+                        android:id="@+id/id_video_controller"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/null_color" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="#000000" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <!--                如设计界面不显示布局 可注释以上代码 观看完后记得注释改回来 结束-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="点击下方信息进行预约"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1、选择预约日期"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2、选择日期后,点击预约时间，开始预约"
+            android:padding="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="#1fcccccc"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:layout_height="60dp">
+
+            <LinearLayout
+                android:id="@+id/ll_dianzan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_dianzan"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/dianzan_n"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dianzan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pinlun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_toRightOf="@id/ll_dianzan"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/liuyan"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/tv_liuyan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16sp"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ll_pinlun">
+
+                <ImageView
+                    android:id="@+id/iv_shoucang"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/sc_n"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_lianxi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/kefu"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系客服"
+
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

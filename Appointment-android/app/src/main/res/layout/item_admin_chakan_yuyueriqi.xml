@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/llshap2"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_xingqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="星期"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_riqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="日期"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp" />
+</LinearLayout>

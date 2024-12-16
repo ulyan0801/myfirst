@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/global"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+
+            android:id="@+id/iv_pic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/touxiang"
+            app:riv_mutate_background="true"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/tv_gaitongxiang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="点击修改头像"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/llshap2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="新昵称:"
+                android:textSize="19sp" />
+
+
+            <EditText
+                android:id="@+id/et_nickname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入新昵称"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_xiugai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bt_selector"
+            android:text="修改"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_fanhui"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_selector"
+        android:layout_marginTop="40dp"
+        android:text="返回"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

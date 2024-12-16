@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@drawable/llshap2"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/yuyueshijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_renshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人数"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_jiage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_zhuangtai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="状态"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+</LinearLayout>

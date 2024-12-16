@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <!--    跑马灯效果-->
+    <!--    marquee_forever 滚动次数-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:background="@color/global"
+        android:text="                                             1、请您合理安排时间、按时到达候诊区取号处出示预约信息扫码获取纸质号码，取完纸质号码后到候诊区等待叫号就诊。2、预约取消：预约成功后，若不能按时就诊，请至少提前一天取消预约,当天预约不可取消。">
+
+        <requestFocus />
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

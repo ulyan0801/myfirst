@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="挂号须知(线下模版，仅供参考)"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+
+
+
+1)预约一人注册最多可以给3个人预约挂号，预约挂号患者信息必须准确无误，否则无法取号。\n
+
+
+
+2)自费、公费、医保患者均可微信预约挂号，医保患者预约挂号需全款支付费用，待就诊时须到窗口或自助机关联医保卡后退医保报销部分金额(报销金额3个工作日内原路退回)。\n
+
+
+
+3)患者30天内爽约累计3次限制挂号30 天。\n
+
+
+
+※ “电话预约”，请您至少提前一周预约咨询（010-65827961），可按照预约时间来院取号就诊。\n
+
+
+
+➤ 2.预约挂号开始的时间？\n
+
+
+
+预约挂号平台可预约从次日起未来7天内的门诊号，每天早上8:00开放号源。\n
+
+
+
+例如：预约周一某专家号源，可在前两周周一早晨8:00开始进行预约。\n
+
+
+
+➤ 3.怎么取号？\n
+
+
+
+预约成功后，于预约时间内，医保患者凭医保卡/电子医保卡、自费或公费患者凭身份证来院自助机自助取号或收费处人工取号。\n
+
+
+
+上午号段：8:00-11:30\n
+
+下午号段：13:30-16:30\n
+
+晚诊号段：17:30-20:30\n
+
+
+
+请于结束时间至少提前半小时到院取号。\n
+
+
+
+注：部分医生上午就诊时间为9:00~11:30，具体可电话咨询xx。\n
+
+
+
+➤ 4.约不上专家号怎么办？\n
+
+
+
+约不上号，不限号专家可当天来院凭医保卡(电子医保卡亦可)或身份证实名制现场挂号，具体请提前电话咨询xxx。\n
+
+
+
+➤ 5.就诊前需要签到吗？\n
+
+
+
+无需签到，请按就诊时间段提前15分钟到诊室门口候诊。\n
+
+
+
+➤ 6.怎么快速找到诊室呢？\n
+
+
+
+可根据挂号单上的诊室信息找到相应位置，也可直接去导诊台或找院内工作人员咨询。\n
+
+
+
+➤ 7.怎么缴费呢？\n
+
+
+
+就诊后，待医生开完处方或治疗单即可缴费。\n
+
+
+
+持xx市医保卡患者可直接前往各楼层自助机或一楼大厅收费处缴费\n
+
+
+其他非北京市医保卡患者需前往一楼大厅收费处缴费\n
+
+
+
+➤ 8.能开发票吗？\n
+
+
+
+可以，当日凭挂号条及缴费凭据直接到导诊台开具发票即可。\n
+
+
+
+➤ 9.怎么退号？\n
+
+
+
+预约挂号在线退号最迟退号时间为就诊前一天20:00之前。\n
+
+
+
+就诊当天退号必须到院取号后再进行退号，现场退号最迟退号时间为：上午号8:00-11:30,下午号8:00-16:30,晚诊号8:00-20:30。\n
+
+
+
+退号必须到人工窗口退号，已过就诊日期无法进行退号，后果自行承担。\n" />
+    </LinearLayout>
+
+</ScrollView>
